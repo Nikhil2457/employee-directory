@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Employee Directory</h1>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search by name or email">
+            <button id="filter-btn">Filter</button>
+            <select id="sort-by">
+                <option value="">Sort By</option>
+                <option value="firstName">First Name</option>
+                <option value="lastName">Last Name</option>
+                <option value="department">Department</option>
+                <option value="role">Role</option>
+            </select>
+            <button onclick="window.location.href='add-edit-form.html'" class="add-btn">Add Employee</button>
+            <button onclick="resetToInitialData()" class="reset-btn">Reset Data</button>
+        </div>
+        <div id="filter-popup" style="display: none;">
+            <h3>Filter Employees</h3>
+            <div class="form-group">
+                <label for="filter-department">Department:</label>
+                <select id="filter-department">
+                    <option value="">All</option>
+                    <option value="HR">HR</option>
+                    <option value="IT">IT</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Sales">Sales</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="filter-role">Role:</label>
+                <input type="text" id="filter-role" placeholder="Enter role">
+            </div>
+            <button id="apply-filter">Apply Filter</button>
+            <button id="close-filter">Close</button>
+        </div>
+        <div id="employee-list-container"></div>
+        <div class="pagination">
+            <select id="items-per-page">
+                <option value="10">10 per page</option>
+                <option value="25">25 per page</option>
+                <option value="50">50 per page</option>
+                <option value="100">100 per page</option>
+            </select>
+            <button id="prev-page">Previous</button>
+            <span id="page-info"></span>
+            <button id="next-page">Next</button>
+        </div>
+    </div>
+    <script src="../static/js/data.js"></script>
+    <script src="../static/js/app.js"></script>
+</body>
+</html> 

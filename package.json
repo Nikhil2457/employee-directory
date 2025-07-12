@@ -1,0 +1,35 @@
+{
+  "name": "employee-directory",
+  "version": "1.0.0",
+  "description": "A responsive web application to manage an employee directory using HTML, CSS, JavaScript, and simulated Freemarker templates",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser or use Live Server extension'",
+    "dev": "echo 'Use Live Server extension in VS Code for development'"
+  },
+  "keywords": [
+    "employee",
+    "directory",
+    "crud",
+    "responsive",
+    "javascript",
+    "html",
+    "css",
+    "freemarker"
+  ],
+  "author": "Employee Directory Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/employee-directory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/employee-directory/issues"
+  },
+  "homepage": "https://github.com/yourusername/employee-directory#readme",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
